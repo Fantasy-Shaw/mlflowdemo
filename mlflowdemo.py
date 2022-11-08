@@ -86,3 +86,7 @@ if __name__ == "__main__":
         mlflow.sklearn.log_model(lr, "model")
 
 # mlflow ui --backend-store-uri mysql://root:123456@127.0.0.1:3306/mlflow
+
+# Run on CentOS7 server
+# mlflow server -p 10003 --backend-store-uri mysql://cumtcsb617:741852369@127.0.0.1:3306/mlflow --host 0.0.0.0 --default-artifact-root /home/pywork/mlwork/artifacts
+# nohup mlflow server -p 10003 --backend-store-uri mysql://cumtcsb617:741852369@127.0.0.1:3306/mlflow --host 0.0.0.0 --default-artifact-root /home/pywork/mlwork/artifacts > mlflow.log
